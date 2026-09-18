@@ -1,0 +1,16 @@
+[project]
+name = "ez-gallery-dl"
+version = "0.1.0"
+description = "A lightweight Tkinter desktop runner for gallery-dl"
+requires-python = ">=3.12"
+dependencies = ["gallery-dl>=1.31"]
+
+[project.gui-scripts]
+ez-gallery-dl = "app.main:main"
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["app"]
