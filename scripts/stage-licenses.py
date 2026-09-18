@@ -10,6 +10,7 @@ from pathlib import Path
 
 target = Path("dist/EZ-Gallery-DL/licenses")
 target.mkdir(parents=True, exist_ok=True)
+shutil.copyfile("LICENSE", target.parent / "LICENSE")
 for name in ("gallery-dl", "requests", "certifi", "charset-normalizer", "idna", "urllib3", "pyinstaller"):
     distribution = importlib.metadata.distribution(name)
     for file in distribution.files:

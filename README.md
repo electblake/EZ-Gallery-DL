@@ -19,6 +19,8 @@ For a terminal launch with Python tracebacks visible:
 uv run python -m app
 ```
 
+![EZ Gallery DL application](demo.png)
+
 ## Downloads
 
 - Choose URL or Text file, enter the source, and click Start download.
